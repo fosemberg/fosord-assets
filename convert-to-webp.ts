@@ -1,5 +1,6 @@
 import sharp from "sharp";
 import { join, basename } from "path";
+import { existsSync } from "node:fs";
 
 const imagesPath = process.env.IMAGES_PATH;
 
@@ -8,7 +9,7 @@ if (!imagesPath) {
   process.exit(1);
 }
 
-if (!(await Bun.file(imagesPath).exists())) {
+if (!existsSync(imagesPath)) {
   console.error(`Error: directory not found: ${imagesPath}`);
   process.exit(1);
 }
