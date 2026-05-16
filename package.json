@@ -2,7 +2,7 @@
   "name": "fosord-assets",
   "private": true,
   "scripts": {
-    "convert": "bun --env-file=.env convert-to-webp.ts"
+    "start": "bun --env-file=.env convert-to-webp.ts"
   },
   "devDependencies": {
     "@types/bun": "^1.3.14",
