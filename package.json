@@ -1,0 +1,17 @@
+{
+  "name": "fosord-assets",
+  "private": true,
+  "scripts": {
+    "convert": "bun --env-file=.env convert-to-webp.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.14",
+    "@types/sharp": "^0.32.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5"
+  }
+}
