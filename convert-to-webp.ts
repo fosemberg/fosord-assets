@@ -33,10 +33,22 @@ const metadata = {
 
 console.log(`Found ${pngFiles.length} PNG file(s), converting...`);
 
+const CARDS_FILE = "images.json";
+const cards: Record<string, string[]> = {};
+
 for (const file of pngFiles) {
   const inputPath = join(imagesPath, file);
   const outputName = basename(file, ".png") + ".webp";
   const outputPath = join(outputDir, outputName);
+
+  const name = basename(file, ".png");
+  const variantMatch = name.match(/^(.+)_(\d+)$/);
+  if (variantMatch) {
+    const [, base, variant] = variantMatch;
+    (cards[base] ??= []).push(variant);
+  } else {
+    cards[name] ??= [];
+  }
 
   if (existsSync(outputPath)) {
     console.log(`- ${file} skipped (already exists)`);
@@ -50,5 +62,9 @@ for (const file of pngFiles) {
     console.error(`✗ ${file}: ${(err as Error).message}`);
   }
 }
+
+const cardsPath = join(outputDir, CARDS_FILE);
+await Bun.write(cardsPath, JSON.stringify(cards, null, 2));
+console.log(`✓ docs/cards.json updated (${Object.keys(cards).length} cards)`);
 
 console.log("Done.");

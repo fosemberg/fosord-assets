@@ -1,0 +1,233 @@
+{
+  "earth_golem": [],
+  "ogre": [
+    "2",
+    "3"
+  ],
+  "void_walker": [
+    "2",
+    "3"
+  ],
+  "moss_titan": [
+    "4",
+    "2",
+    "3"
+  ],
+  "inferno_hound": [
+    "2"
+  ],
+  "stone_golem": [],
+  "forest_sprite": [
+    "3",
+    "2"
+  ],
+  "lich": [],
+  "wight": [
+    "3",
+    "2"
+  ],
+  "rogue": [],
+  "warlord": [
+    "4",
+    "3",
+    "2"
+  ],
+  "ember_spirit": [
+    "3",
+    "2",
+    "4"
+  ],
+  "thorn_beast": [
+    "3",
+    "2",
+    "4"
+  ],
+  "lava_titan": [
+    "3",
+    "2"
+  ],
+  "pyromaniac_mage": [
+    "2"
+  ],
+  "phantom_warrior": [
+    "3",
+    "2"
+  ],
+  "spider": [],
+  "earth_elemental": [],
+  "harpy": [],
+  "revenant": [
+    "2"
+  ],
+  "thorn_archer": [
+    "2"
+  ],
+  "plague_walker": [
+    "2",
+    "3"
+  ],
+  "magma_beast": [
+    "2"
+  ],
+  "berserker": [],
+  "assassin": [],
+  "bark_golem": [
+    "2"
+  ],
+  "woodland_bear": [
+    "2"
+  ],
+  "skull_mage": [
+    "2",
+    "3"
+  ],
+  "leviathan": [],
+  "ancient_lich": [],
+  "death_knight": [],
+  "mage": [],
+  "eternal_phoenix": [],
+  "fire_hydra": [
+    "2"
+  ],
+  "war_god": [
+    "2",
+    "3"
+  ],
+  "troll": [],
+  "flame_dancer": [
+    "4",
+    "2",
+    "3"
+  ],
+  "nature_warden": [
+    "2"
+  ],
+  "rat": [],
+  "warrior": [],
+  "archmage": [],
+  "shade": [
+    "2"
+  ],
+  "gladiator": [],
+  "spore_walker": [
+    "4",
+    "3",
+    "2"
+  ],
+  "necromancer": [],
+  "tiger": [],
+  "bone_archer": [
+    "2",
+    "3",
+    "4"
+  ],
+  "dragon": [],
+  "world_serpent": [
+    "3",
+    "2"
+  ],
+  "crypt_stalker": [],
+  "healer": [],
+  "vampire_lord": [],
+  "warthog": [],
+  "crossbow": [],
+  "war_elephant": [],
+  "treant_sapling": [
+    "3",
+    "2",
+    "4"
+  ],
+  "grave_warden": [
+    "4",
+    "3",
+    "2"
+  ],
+  "warlock": [
+    "2"
+  ],
+  "imp": [],
+  "lava_troll": [
+    "4",
+    "3",
+    "2"
+  ],
+  "witch": [
+    "2",
+    "3"
+  ],
+  "ancient_treant": [
+    "2"
+  ],
+  "dryad": [
+    "3",
+    "2"
+  ],
+  "werewolf": [
+    "3",
+    "2"
+  ],
+  "dark_paladin": [],
+  "shaman": [],
+  "old_oak": [
+    "2"
+  ],
+  "knight": [],
+  "druid": [],
+  "wolf": [],
+  "cursed_warrior": [
+    "2",
+    "3"
+  ],
+  "bone_giant": [],
+  "iron_colossus": [],
+  "hydra": [],
+  "cinder_knight": [
+    "2",
+    "3"
+  ],
+  "templar": [],
+  "death_god": [],
+  "fire_wraith": [
+    "4",
+    "3",
+    "2"
+  ],
+  "archer": [],
+  "cyclops": [],
+  "chimera": [],
+  "banshee": [
+    "2",
+    "3"
+  ],
+  "pebble_golem": [],
+  "zombie": [],
+  "ancient_dragon": [],
+  "vine_spirit": [
+    "2"
+  ],
+  "goblin": [],
+  "demigod": [],
+  "crusader": [],
+  "bone_dragon": [],
+  "high_templar": [],
+  "paladin": [],
+  "ghoul": [
+    "2",
+    "3"
+  ],
+  "bat": [],
+  "storm_giant": [],
+  "titan": [],
+  "bandit": [],
+  "skeleton": [],
+  "inferno_lord": [],
+  "demon": [],
+  "falcon": [],
+  "ivy_golem": [
+    "2"
+  ],
+  "phoenix": [],
+  "elder_dragon": [],
+  "vampire": [],
+  "kobold": []
+}
