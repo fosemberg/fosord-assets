@@ -38,6 +38,11 @@ for (const file of pngFiles) {
   const outputName = basename(file, ".png") + ".webp";
   const outputPath = join(outputDir, outputName);
 
+  if (existsSync(outputPath)) {
+    console.log(`- ${file} skipped (already exists)`);
+    continue;
+  }
+
   try {
     await sharp(inputPath).withMetadata(metadata).webp().toFile(outputPath);
     console.log(`✓ ${file} → docs/${outputName}`);
