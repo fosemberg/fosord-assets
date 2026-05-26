@@ -1,4 +1,5 @@
 {
+  "ice_witch": [],
   "earth_golem": [],
   "ogre": [
     "2",
@@ -37,6 +38,7 @@
     "2",
     "4"
   ],
+  "thunder_imp": [],
   "thorn_beast": [
     "3",
     "2",
@@ -70,6 +72,7 @@
     "2"
   ],
   "berserker": [],
+  "frozen_knight": [],
   "assassin": [],
   "bark_golem": [
     "2"
@@ -77,15 +80,19 @@
   "woodland_bear": [
     "2"
   ],
+  "permafrost_golem": [],
   "skull_mage": [
     "2",
     "3"
   ],
+  "ice_troll": [],
   "leviathan": [],
   "ancient_lich": [],
   "death_knight": [],
   "mage": [],
   "eternal_phoenix": [],
+  "archangel": [],
+  "risen_knight": [],
   "fire_hydra": [
     "2"
   ],
@@ -166,6 +173,7 @@
     "3",
     "2"
   ],
+  "frost_sprite": [],
   "dark_paladin": [],
   "shaman": [],
   "old_oak": [
@@ -185,6 +193,7 @@
     "2",
     "3"
   ],
+  "frost_guardian": [],
   "templar": [],
   "death_god": [],
   "fire_wraith": [
@@ -199,6 +208,7 @@
     "2",
     "3"
   ],
+  "yeti": [],
   "pebble_golem": [],
   "zombie": [],
   "ancient_dragon": [],
@@ -207,10 +217,15 @@
   ],
   "goblin": [],
   "demigod": [],
+  "centaur": [],
   "crusader": [],
   "bone_dragon": [],
   "high_templar": [],
   "paladin": [],
+  "glacier_colossus": [],
+  "spectral_knight": [],
+  "spark_sprite": [],
+  "ice_golem_minor": [],
   "ghoul": [
     "2",
     "3"
@@ -221,8 +236,11 @@
   "bandit": [],
   "skeleton": [],
   "inferno_lord": [],
+  "ice_phoenix": [],
   "demon": [],
   "falcon": [],
+  "frost_witch": [],
+  "lightning_wolf": [],
   "ivy_golem": [
     "2"
   ],
