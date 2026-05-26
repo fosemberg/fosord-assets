@@ -1,4 +1,5 @@
 {
+  "lightning_archer": [],
   "ice_witch": [],
   "earth_golem": [],
   "ogre": [
@@ -18,11 +19,13 @@
     "2"
   ],
   "stone_golem": [],
+  "void_lord": [],
   "forest_sprite": [
     "3",
     "2"
   ],
   "lich": [],
+  "thunder_knight": [],
   "wight": [
     "3",
     "2"
@@ -73,6 +76,7 @@
   ],
   "berserker": [],
   "frozen_knight": [],
+  "tempest_lord": [],
   "assassin": [],
   "bark_golem": [
     "2"
@@ -91,6 +95,7 @@
   "death_knight": [],
   "mage": [],
   "eternal_phoenix": [],
+  "storm_witch": [],
   "archangel": [],
   "risen_knight": [],
   "fire_hydra": [
@@ -123,6 +128,7 @@
   ],
   "necromancer": [],
   "tiger": [],
+  "dawn_warrior": [],
   "bone_archer": [
     "2",
     "3",
@@ -158,6 +164,7 @@
     "3",
     "2"
   ],
+  "shadow_spirit": [],
   "witch": [
     "2",
     "3"
@@ -165,6 +172,7 @@
   "ancient_treant": [
     "2"
   ],
+  "celestial_mage": [],
   "dryad": [
     "3",
     "2"
@@ -180,13 +188,17 @@
     "2"
   ],
   "knight": [],
+  "nightshade_spirit": [],
   "druid": [],
   "wolf": [],
+  "darkness_titan": [],
   "cursed_warrior": [
     "2",
     "3"
   ],
   "bone_giant": [],
+  "dark_sprite": [],
+  "holy_archer": [],
   "iron_colossus": [],
   "hydra": [],
   "cinder_knight": [
@@ -194,8 +206,10 @@
     "3"
   ],
   "frost_guardian": [],
+  "shadow_knight": [],
   "templar": [],
   "death_god": [],
+  "holy_sprite": [],
   "fire_wraith": [
     "4",
     "3",
@@ -209,6 +223,8 @@
     "3"
   ],
   "yeti": [],
+  "gloom_beast": [],
+  "sacred_monk": [],
   "pebble_golem": [],
   "zombie": [],
   "ancient_dragon": [],
@@ -217,12 +233,15 @@
   ],
   "goblin": [],
   "demigod": [],
+  "storm_golem": [],
   "centaur": [],
   "crusader": [],
   "bone_dragon": [],
+  "divine_guard": [],
   "high_templar": [],
   "paladin": [],
   "glacier_colossus": [],
+  "thunder_warrior": [],
   "spectral_knight": [],
   "spark_sprite": [],
   "ice_golem_minor": [],
@@ -231,12 +250,17 @@
     "3"
   ],
   "bat": [],
+  "shadow_imp": [],
+  "void_wolf": [],
+  "shadow_hawk": [],
   "storm_giant": [],
   "titan": [],
   "bandit": [],
+  "thunder_titan": [],
   "skeleton": [],
   "inferno_lord": [],
   "ice_phoenix": [],
+  "light_guardian": [],
   "demon": [],
   "falcon": [],
   "frost_witch": [],
@@ -245,6 +269,7 @@
     "2"
   ],
   "phoenix": [],
+  "divine_healer": [],
   "elder_dragon": [],
   "vampire": [],
   "kobold": []
