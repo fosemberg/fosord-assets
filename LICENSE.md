@@ -24,6 +24,6 @@ By accessing or cloning this repository, you agree to the following terms. You a
 
 ## 💡 AI-Generated Content Clarification
 
-All base arts within this repository were generated using Midjourney under a valid paid commercial subscription. Final compilation, background removal, UI framing, and asset structuring were performed manually by the author. Unlawful scraping or replication of the assembled game assets will be treated as an infringement of the author's intellectual design.
+All base arts within this repository were generated using Midjourney and/or fal.ai (Flux 1.1 Pro) under valid paid commercial subscriptions. Final compilation, background removal, UI framing, and asset structuring were performed manually by the author. Unlawful scraping or replication of the assembled game assets will be treated as an infringement of the author's intellectual design.
 
 *For any inquiries or licensing requests, please contact the repository owner.*
