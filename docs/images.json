@@ -1,7 +1,10 @@
 {
+  "horde_outrider": [],
   "lightning_archer": [],
   "ice_witch": [],
+  "vermilion_bird": [],
   "earth_golem": [],
+  "great_khan": [],
   "ogre": [
     "2",
     "3"
@@ -15,10 +18,13 @@
     "2",
     "3"
   ],
+  "steppe_pony": [],
   "inferno_hound": [
     "2"
   ],
+  "abyss_lord": [],
   "stone_golem": [],
+  "azure_dragon": [],
   "void_lord": [],
   "forest_sprite": [
     "3",
@@ -31,17 +37,20 @@
     "2"
   ],
   "rogue": [],
+  "mounted_lancer": [],
   "warlord": [
     "4",
     "3",
     "2"
   ],
+  "street_urchin": [],
   "ember_spirit": [
     "3",
     "2",
     "4"
   ],
   "thunder_imp": [],
+  "shaolin_monk": [],
   "thorn_beast": [
     "3",
     "2",
@@ -75,7 +84,9 @@
     "2"
   ],
   "berserker": [],
+  "yurt_dweller": [],
   "frozen_knight": [],
+  "yurt_shaman": [],
   "tempest_lord": [],
   "assassin": [],
   "bark_golem": [
@@ -89,14 +100,18 @@
     "2",
     "3"
   ],
+  "detective_hound": [],
   "ice_troll": [],
   "leviathan": [],
   "ancient_lich": [],
   "death_knight": [],
   "mage": [],
   "eternal_phoenix": [],
+  "kurgan_warrior": [],
+  "mare_milk_healer": [],
   "storm_witch": [],
   "archangel": [],
+  "steppe_nomad": [],
   "risen_knight": [],
   "fire_hydra": [
     "2"
@@ -129,6 +144,7 @@
   "necromancer": [],
   "tiger": [],
   "dawn_warrior": [],
+  "khan_guard": [],
   "bone_archer": [
     "2",
     "3",
@@ -139,12 +155,17 @@
     "3",
     "2"
   ],
+  "constable": [],
   "crypt_stalker": [],
   "healer": [],
   "vampire_lord": [],
+  "case_files_chief": [],
+  "banner_rider": [],
   "warthog": [],
   "crossbow": [],
   "war_elephant": [],
+  "pipe_detective": [],
+  "horse_archer": [],
   "treant_sapling": [
     "3",
     "2",
@@ -165,6 +186,7 @@
     "2"
   ],
   "shadow_spirit": [],
+  "riddle_keeper": [],
   "witch": [
     "2",
     "3"
@@ -177,17 +199,22 @@
     "3",
     "2"
   ],
+  "steppe_falconer": [],
   "werewolf": [
     "3",
     "2"
   ],
   "frost_sprite": [],
   "dark_paladin": [],
+  "steppe_rider": [],
   "shaman": [],
+  "monkey_king": [],
   "old_oak": [
     "2"
   ],
+  "tumen_commander": [],
   "knight": [],
+  "nomad_chieftain": [],
   "nightshade_spirit": [],
   "druid": [],
   "wolf": [],
@@ -197,10 +224,15 @@
     "3"
   ],
   "bone_giant": [],
+  "jade_swordmaster": [],
+  "abyss_walker": [],
+  "steppe_eagle": [],
   "dark_sprite": [],
   "holy_archer": [],
   "iron_colossus": [],
+  "khanate_archer": [],
   "hydra": [],
+  "the_unknown": [],
   "cinder_knight": [
     "2",
     "3"
@@ -208,6 +240,7 @@
   "frost_guardian": [],
   "shadow_knight": [],
   "templar": [],
+  "firecracker_bearer": [],
   "death_god": [],
   "holy_sprite": [],
   "fire_wraith": [
@@ -235,10 +268,13 @@
   "demigod": [],
   "storm_golem": [],
   "centaur": [],
+  "composite_bowman": [],
   "crusader": [],
   "bone_dragon": [],
+  "steppe_wolf_rider": [],
   "divine_guard": [],
   "high_templar": [],
+  "street_lantern": [],
   "paladin": [],
   "glacier_colossus": [],
   "thunder_warrior": [],
@@ -252,8 +288,10 @@
   "bat": [],
   "shadow_imp": [],
   "void_wolf": [],
+  "guardian_lion": [],
   "shadow_hawk": [],
   "storm_giant": [],
+  "field_inspector": [],
   "titan": [],
   "bandit": [],
   "thunder_titan": [],
@@ -261,9 +299,15 @@
   "inferno_lord": [],
   "ice_phoenix": [],
   "light_guardian": [],
+  "fox_spirit": [],
+  "lamplighter": [],
+  "terracotta_soldier": [],
+  "imperial_general": [],
+  "qilin": [],
   "demon": [],
   "falcon": [],
   "frost_witch": [],
+  "monkey_clone": [],
   "lightning_wolf": [],
   "ivy_golem": [
     "2"
@@ -271,6 +315,8 @@
   "phoenix": [],
   "divine_healer": [],
   "elder_dragon": [],
+  "magnifying_sleuth": [],
+  "forensic_doctor": [],
   "vampire": [],
   "kobold": []
 }
