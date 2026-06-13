@@ -150,6 +150,11 @@
   "void_lich": [],
   "thunder_titan": [],
   "serpent_cultist": [],
+  "evil_baursak": [
+    "2",
+    "4",
+    "3"
+  ],
   "storm_witch": [],
   "pearl_guardian": [],
   "shadow_assassin": [],
@@ -318,6 +323,11 @@
   "frozen_knight": [],
   "steel_juggernaut": [],
   "jakiro": [],
+  "good_baursak": [
+    "3",
+    "2",
+    "4"
+  ],
   "undead_bear": [],
   "net_fighter": [],
   "golden_knight": [],
