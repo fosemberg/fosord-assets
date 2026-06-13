@@ -1,6 +1,12 @@
 {
   "elf_champion": [],
   "grand_mage_minor": [],
+  "scythed_chariot": [
+    "3",
+    "2",
+    "5",
+    "4"
+  ],
   "horde_outrider": [],
   "coral_golem": [],
   "evil_baursak": [
@@ -47,10 +53,22 @@
   "temple_warrior": [],
   "void_colossus": [],
   "star_dancer": [],
+  "mechanical_lion": [
+    "3",
+    "2",
+    "5",
+    "4"
+  ],
   "abyss_lord": [],
   "frost_leviathan": [],
   "stone_golem": [],
   "enigma": [],
+  "robot_knight": [
+    "5",
+    "4",
+    "3",
+    "2"
+  ],
   "mirror_warrior": [],
   "death_knight_lord": [],
   "azure_dragon": [],
@@ -81,7 +99,12 @@
   "lightning_elemental_lord": [],
   "rogue": [],
   "merfolk_archer": [],
-  "self_propelled_cart": [],
+  "self_propelled_cart": [
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
   "gorgon": [],
   "herald_angel": [],
   "supreme_archangel": [],
@@ -135,6 +158,12 @@
   "orc_champion": [],
   "pit_fighter": [],
   "dragonborn_warrior": [],
+  "leonardo_da_vinci": [
+    "4",
+    "5",
+    "2",
+    "3"
+  ],
   "thunder_imp": [],
   "stone_sentinel": [],
   "storm_eagle": [],
@@ -252,7 +281,12 @@
   "obelisk_guardian": [],
   "warchief": [],
   "tidal_knight": [],
-  "vinci_apprentice": [],
+  "vinci_apprentice": [
+    "3",
+    "2",
+    "5",
+    "4"
+  ],
   "mountain_witch": [],
   "contract_killer": [],
   "kez": [],
@@ -263,7 +297,12 @@
     "2",
     "3"
   ],
-  "giant_crossbow": [],
+  "giant_crossbow": [
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
   "chaos_monk": [],
   "spirit_anchor": [],
   "gryphon": [],
@@ -328,7 +367,6 @@
   "ankh_guardian": [],
   "mjolnir_wielder": [],
   "poisoner": [],
-  "scythed_chariot": [],
   "tidehunter": [],
   "war_priest": [],
   "forest_nomad": [],
@@ -393,8 +431,20 @@
   "earth_knight": [],
   "war_elephant_beast": [],
   "deep_pirate": [],
+  "vinci_parachutist": [
+    "3",
+    "2",
+    "5",
+    "4"
+  ],
   "mermaid_archer": [],
   "cutthroat": [],
+  "vinci_tank": [
+    "4",
+    "5",
+    "2",
+    "3"
+  ],
   "swamp_witch": [],
   "dwarf_mage": [],
   "war_angel": [],
@@ -402,8 +452,19 @@
   "slardar": [],
   "fire_giant": [],
   "risen_knight": [],
+  "vinci_workshop": [
+    "3",
+    "2",
+    "5",
+    "4"
+  ],
   "thunder_colossus_elder": [],
-  "camera_obscura": [],
+  "camera_obscura": [
+    "4",
+    "5",
+    "2",
+    "3"
+  ],
   "void_lich": [],
   "fire_hydra": [
     "2"
@@ -423,6 +484,12 @@
   "sand_djinn": [],
   "silencer": [],
   "lycan_wolf": [],
+  "ornithopter": [
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
   "war_god": [
     "2",
     "3"
@@ -494,12 +561,16 @@
   "war_engine_crew": [],
   "oracle": [],
   "tiger": [],
-  "vinci_parachutist": [],
   "storm_knight": [],
+  "organ_gun": [
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
   "canopy_hunter": [],
   "beastmaster": [],
   "ranger": [],
-  "organ_gun": [],
   "dawn_warrior": [],
   "dazzle": [],
   "nevermore": [],
@@ -521,6 +592,12 @@
   "balanar": [],
   "constable": [],
   "rune_golem": [],
+  "vinci_blueprint": [
+    "5",
+    "4",
+    "3",
+    "2"
+  ],
   "crypt_stalker": [],
   "healer": [],
   "torment_demon": [],
@@ -533,6 +610,12 @@
   "bronze_automaton": [],
   "void_mutant": [],
   "case_files_chief": [],
+  "vinci_bombard": [
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
   "sanctified_healer": [],
   "wyvern": [],
   "angel_of_death": [],
@@ -576,7 +659,12 @@
   "nightmare_fae": [],
   "cathedral_gargoyle": [],
   "rain_deity_warrior": [],
-  "aerial_screw": [],
+  "aerial_screw": [
+    "4",
+    "5",
+    "2",
+    "3"
+  ],
   "obsidian_blade_warrior": [],
   "fire_cultist": [],
   "faceless_void": [],
@@ -622,7 +710,6 @@
   "life_spring": [],
   "mountain_king": [],
   "wood_elf_warrior": [],
-  "vinci_tank": [],
   "shadow_spirit": [],
   "blood_skeleton": [],
   "steam_sentinel": [],
@@ -672,7 +759,6 @@
   "serpent_rider_mage": [],
   "nature_god": [],
   "tide_dancer": [],
-  "vinci_bombard": [],
   "astral_titan": [],
   "air_elemental": [],
   "dryad": [
@@ -774,6 +860,12 @@
   "wolf": [],
   "moon_druid": [],
   "darkness_titan": [],
+  "diving_suit": [
+    "3",
+    "2",
+    "5",
+    "4"
+  ],
   "time_guardian": [],
   "sacred_crocodile": [],
   "cursed_warrior": [
@@ -793,7 +885,6 @@
   "ethereal_knight": [],
   "wolf_summoner": [],
   "ghost_horse": [],
-  "diving_suit": [],
   "chen": [],
   "steppe_eagle": [],
   "iron_knight": [],
@@ -827,7 +918,12 @@
   "orc_archer": [],
   "iron_colossus": [],
   "khanate_archer": [],
-  "vinci_glider": [],
+  "vinci_glider": [
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
   "rift_walker": [],
   "jungle_serpent": [],
   "hydra": [],
@@ -840,7 +936,6 @@
   "fire_elemental_lord": [],
   "fear_demon": [],
   "blood_nurse": [],
-  "mechanical_lion": [],
   "cinder_knight": [
     "2",
     "3"
@@ -863,6 +958,12 @@
   "sea_witch_elder": [],
   "chaos_titan": [],
   "witch_doctor": [],
+  "anatomist": [
+    "4",
+    "5",
+    "2",
+    "3"
+  ],
   "lycan": [],
   "diplomat": [],
   "firecracker_bearer": [],
@@ -919,7 +1020,6 @@
   "shadow_demon": [],
   "merfolk_spear": [],
   "cyclops": [],
-  "anatomist": [],
   "chimera": [],
   "fire_mutant": [],
   "dark_seer": [],
@@ -957,7 +1057,6 @@
   "lich_acolyte": [],
   "siege_mercenary": [],
   "blood_titan_supreme": [],
-  "ornithopter": [],
   "magnus": [],
   "gambler": [],
   "clockwork_dragon": [],
@@ -1086,14 +1185,11 @@
   "permafrost_warrior": [],
   "null_warrior": [],
   "world_eater": [],
-  "robot_knight": [],
-  "vinci_workshop": [],
   "abyssal_horror": [],
   "diamond_golem": [],
   "spark_sprite": [],
   "arch_cleric": [],
   "zeus": [],
-  "leonardo_da_vinci": [],
   "ice_golem_minor": [],
   "kraken_spawn": [],
   "void_spirit": [],
@@ -1321,7 +1417,6 @@
   "grand_witch": [],
   "blue_dragon": [],
   "deep_gnome": [],
-  "vinci_blueprint": [],
   "anti_mage": [],
   "kitsune_mage": [],
   "undying_zombie": [],
