@@ -409,6 +409,11 @@
     "2"
   ],
   "mountain_bandit": [],
+  "vitruvian_man": [
+    "3",
+    "2",
+    "4"
+  ],
   "lightning_paladin": [],
   "hellhound": [],
   "fire_mage_elite": [],
@@ -936,7 +941,6 @@
   ],
   "primordial_ice": [],
   "tundra_beast": [],
-  "vitruvian_man": [],
   "tundra_nomad": [],
   "skeleton_king": [],
   "dwarven_sentinel": [],
