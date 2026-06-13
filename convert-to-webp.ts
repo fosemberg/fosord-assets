@@ -36,6 +36,10 @@ console.log(`Found ${pngFiles.length} PNG file(s), converting...`);
 const CARDS_FILE = "images.json";
 const cards: Record<string, string[]> = {};
 
+const skipped: string[] = [];
+const generated: string[] = [];
+const failed: string[] = [];
+
 for (const file of pngFiles) {
   const inputPath = join(imagesPath, file);
   const outputName = basename(file, ".png") + ".webp";
@@ -51,20 +55,33 @@ for (const file of pngFiles) {
   }
 
   if (existsSync(outputPath)) {
-    console.log(`- ${file} skipped (already exists)`);
+    skipped.push(outputName);
     continue;
   }
 
   try {
     await sharp(inputPath).withMetadata(metadata).webp().toFile(outputPath);
-    console.log(`✓ ${file} → docs/${outputName}`);
+    generated.push(outputName);
   } catch (err) {
-    console.error(`✗ ${file}: ${(err as Error).message}`);
+    failed.push(`${file}: ${(err as Error).message}`);
   }
 }
 
 const cardsPath = join(outputDir, CARDS_FILE);
 await Bun.write(cardsPath, JSON.stringify(cards, null, 2));
-console.log(`✓ docs/cards.json updated (${Object.keys(cards).length} cards)`);
 
-console.log("Done.");
+console.log("\n========== REPORT ==========");
+
+console.log(`\nSkipped (already exist): ${skipped.length}`);
+for (const name of skipped) console.log(`  - ${name}`);
+
+console.log(`\nGenerated: ${generated.length}`);
+for (const name of generated) console.log(`  + ${name}`);
+
+if (failed.length > 0) {
+  console.log(`\nErrors: ${failed.length}`);
+  for (const msg of failed) console.log(`  ✗ ${msg}`);
+}
+
+console.log(`\nCards in ${CARDS_FILE}: ${Object.keys(cards).length}`);
+console.log("============================");
