@@ -103,6 +103,7 @@
   "tide_spirit": [],
   "thunder_knight": [],
   "earthshaker": [],
+  "shield_siphon": [],
   "wight": [
     "3",
     "2"
@@ -183,6 +184,7 @@
     "2",
     "3"
   ],
+  "masked_imposter": [],
   "thunder_imp": [],
   "stone_sentinel": [],
   "storm_eagle": [],
@@ -274,6 +276,7 @@
   "eternal_flame": [],
   "yurt_dweller": [],
   "healing_tree": [],
+  "smoke_bomber": [],
   "refuge_warden": [],
   "venomous_snake": [],
   "sun_warrior_aztec": [],
@@ -428,6 +431,7 @@
   "crystal_construct": [],
   "eternal_phoenix": [],
   "venom_ward": [],
+  "echo_of_elsewhere": [],
   "kurgan_warrior": [],
   "void_origin": [],
   "drowned_sailor": [],
@@ -493,6 +497,7 @@
     "4"
   ],
   "mermaid_archer": [],
+  "astral_monk": [],
   "cutthroat": [],
   "vinci_tank": [
     "4",
@@ -624,6 +629,7 @@
   "dark_priest": [],
   "glacier_spirit": [],
   "blessing_knight": [],
+  "ante_gambler": [],
   "sea_jarl": [],
   "forest_raider": [],
   "restoration_mage": [],
@@ -999,6 +1005,7 @@
   "wolf_summoner": [],
   "ghost_horse": [],
   "chen": [],
+  "false_deal_con": [],
   "shadow_stitcher": [],
   "steppe_eagle": [],
   "iron_knight": [],
@@ -1104,6 +1111,7 @@
   "giant_ant": [],
   "twisted_abomination": [],
   "corpse_warrior": [],
+  "escape_artist": [],
   "aboleth": [],
   "goblin_archer": [],
   "gnome_tinker": [],
@@ -1279,6 +1287,7 @@
   "shadow_knight_elite": [],
   "desert_nomad": [],
   "troll_warrior": [],
+  "shell_swindler": [],
   "redeemer_monk": [],
   "blessed_knight": [],
   "bone_dragon": [],
