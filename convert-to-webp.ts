@@ -73,7 +73,15 @@ await Bun.write(cardsPath, JSON.stringify(cards, null, 2));
 console.log("\n========== REPORT ==========");
 
 console.log(`\nSkipped (already exist): ${skipped.length}`);
-for (const name of skipped) console.log(`  - ${name}`);
+const HEAD = 2;
+const TAIL = 2;
+if (skipped.length <= HEAD + TAIL) {
+  for (const name of skipped) console.log(`  - ${name}`);
+} else {
+  for (const name of skipped.slice(0, HEAD)) console.log(`  - ${name}`);
+  console.log(`  ... (${skipped.length - HEAD - TAIL} more)`);
+  for (const name of skipped.slice(-TAIL)) console.log(`  - ${name}`);
+}
 
 console.log(`\nGenerated: ${generated.length}`);
 for (const name of generated) console.log(`  + ${name}`);
