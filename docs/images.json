@@ -193,6 +193,7 @@
   "shaolin_monk": [],
   "chaos_warrior": [],
   "merman_warrior": [],
+  "grove_sprout": [],
   "thorn_beast": [
     "3",
     "2",
@@ -745,6 +746,7 @@
   "puppet_warrior": [],
   "dark_champion": [],
   "cave_spider": [],
+  "seed_sower": [],
   "nightmare_fae": [],
   "symbiote_moss": [],
   "cathedral_gargoyle": [],
@@ -879,6 +881,7 @@
   "goblin_shaman": [],
   "spy": [],
   "dwarf_axeman": [],
+  "sneaker_shark": [],
   "shield_breaker": [],
   "steppe_falconer": [],
   "bombardier": [],
