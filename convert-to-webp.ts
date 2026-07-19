@@ -45,13 +45,15 @@ for (const file of pngFiles) {
   const outputName = basename(file, ".png") + ".webp";
   const outputPath = join(outputDir, outputName);
 
+  // Structured naming: `id[__skin_<v>][__form_<v>]`. Segments split on `__`;
+  // the first is the card id, the rest form the variant suffix (e.g.
+  // `skin_2`, `form_storm`, `skin_2__form_storm`). A bare id is the base image.
   const name = basename(file, ".png");
-  const variantMatch = name.match(/^(.+)_(\d+)$/);
-  if (variantMatch) {
-    const [, base, variant] = variantMatch;
-    (cards[base] ??= []).push(variant);
+  const [id, ...segments] = name.split("__");
+  if (segments.length) {
+    (cards[id] ??= []).push(segments.join("__"));
   } else {
-    cards[name] ??= [];
+    cards[id] ??= [];
   }
 
   if (existsSync(outputPath)) {
