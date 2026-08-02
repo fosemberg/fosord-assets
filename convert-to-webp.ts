@@ -31,38 +31,60 @@ const metadata = {
   exif: { IFD0: { Copyright: COPYRIGHT } },
 } as Parameters<ReturnType<typeof sharp>["withMetadata"]>[0];
 
-console.log(`Found ${pngFiles.length} PNG file(s), converting...`);
-
 const CARDS_FILE = "images.json";
 const cards: Record<string, string[]> = {};
+
+// Two-tone ink sets are generated as strictly (0,0,0)/(255,255,255) images
+// (gen-art `--skin bw` binarizes every render). Lossy webp would smear gray
+// fringes along every stroke and undo that; on flat two-colour art lossless is
+// the smaller file anyway. `bun run start` still converts everything; the extra
+// `bun run mono` narrows a run down to just the two-tone sets (add --force to
+// re-publish ones whose png was re-rolled or re-thresholded).
+const MONO_SKINS = new Set(["bw"]);
+const isMono = (segments: string[]) =>
+  segments.some(s => s.startsWith("skin_") && MONO_SKINS.has(s.slice(5)));
+
+// Structured naming: `id[__skin_<v>][__form_<v>]`. Segments split on `__`;
+// the first is the card id, the rest form the variant suffix (e.g. `skin_2`,
+// `form_storm`, `skin_2__form_storm`). A bare id is the base image.
+const parsed = pngFiles.map(file => {
+  const name = basename(file, ".png");
+  const [id, ...segments] = name.split("__");
+  return { file, name, id, segments, mono: isMono(segments) };
+});
+
+// images.json is rebuilt from scratch, so it must always see EVERY png —
+// otherwise a filtered run would drop the other half of the catalogue.
+for (const { id, segments } of parsed) {
+  if (segments.length) (cards[id] ??= []).push(segments.join("__"));
+  else cards[id] ??= [];
+}
+
+const onlyMono = process.argv.includes("--mono");
+const noMono = process.argv.includes("--no-mono");
+const force = process.argv.includes("--force");
+const queue = parsed.filter(p => (onlyMono ? p.mono : noMono ? !p.mono : true));
+
+const scope = onlyMono ? "mono skins only" : noMono ? "skipping mono skins" : "everything";
+console.log(`Found ${pngFiles.length} PNG file(s), converting ${queue.length} (${scope})...`);
 
 const skipped: string[] = [];
 const generated: string[] = [];
 const failed: string[] = [];
 
-for (const file of pngFiles) {
+for (const { file, name, mono } of queue) {
   const inputPath = join(imagesPath, file);
-  const outputName = basename(file, ".png") + ".webp";
+  const outputName = name + ".webp";
   const outputPath = join(outputDir, outputName);
 
-  // Structured naming: `id[__skin_<v>][__form_<v>]`. Segments split on `__`;
-  // the first is the card id, the rest form the variant suffix (e.g.
-  // `skin_2`, `form_storm`, `skin_2__form_storm`). A bare id is the base image.
-  const name = basename(file, ".png");
-  const [id, ...segments] = name.split("__");
-  if (segments.length) {
-    (cards[id] ??= []).push(segments.join("__"));
-  } else {
-    cards[id] ??= [];
-  }
-
-  if (existsSync(outputPath)) {
+  if (existsSync(outputPath) && !force) {
     skipped.push(outputName);
     continue;
   }
 
   try {
-    await sharp(inputPath).withMetadata(metadata).webp().toFile(outputPath);
+    const webpOptions = mono ? { lossless: true, effort: 6 } : {};
+    await sharp(inputPath).withMetadata(metadata).webp(webpOptions).toFile(outputPath);
     generated.push(outputName);
   } catch (err) {
     failed.push(`${file}: ${(err as Error).message}`);
