@@ -1,6 +1,7 @@
 import sharp from "sharp";
 import { join, basename } from "path";
 import { existsSync } from "node:fs";
+import { EXCLUDED_CARDS } from "./excluded-cards";
 
 const imagesPath = process.env.IMAGES_PATH;
 
@@ -57,19 +58,7 @@ const parsed = pngFiles.map(file => {
 // CONTENT_AUDIT_RU.md in the fosord repo). Their raw PNGs may still sit in
 // IMAGES_PATH, but they must never be published or indexed again — without
 // this guard a full `bun run start` would resurrect them in images.json.
-const EXCLUDED_CARDS = new Set([
-  "dark_paladin", "martyr_saint", "exsanguination_saint", "vinci_apprentice",
-  "flower_thrower", "hooded_vandal", "flagellant_prophet", "crusader",
-  "high_exorcist", "graffiti_rat", "solar_flagellant", "transfusion_nun",
-  "dismaland", "life_priest", "paladin", "quiet_inquisitor", "war_priest",
-  "pink_elephant", "blessing_knight", "corrupted_paladin", "martyr_shieldbearer",
-  "templar", "zeal_crusader", "archangel", "cathedral_gargoyle", "fallen_paladin",
-  "inquisitor", "supreme_archangel", "ward_relic", "absolution_angel",
-  "angel_of_death", "arch_angel_warrior", "chen", "fallen_angel", "omniknight",
-  "seraph_warrior", "balloon_girl", "dark_priest", "guardian_angel",
-  "halo_archer", "high_templar", "monkey_king", "monkey_clone", "redeemer_monk",
-  "relic_bearer", "sacred_monk", "shredded_masterpiece", "the_pale_rider",
-]);
+// The list lives in excluded-cards.ts (shared with `bun run cleanup`).
 const published = parsed.filter(p => !EXCLUDED_CARDS.has(p.id));
 {
   const dropped = parsed.length - published.length;
