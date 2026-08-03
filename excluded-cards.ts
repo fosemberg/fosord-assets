@@ -1,23 +1,27 @@
-// Карты, снятые с игры контент-аудитом для РФ-релиза (см. CONTENT_AUDIT_RU.md
-// в репо fosord, PR fosemberg/fosord#319). Их исходные PNG могут оставаться в
-// IMAGES_PATH, но публиковаться и индексироваться они не должны.
-//
-// Единый источник списка для двух потребителей:
-//   - convert-to-webp.ts — не конвертирует и не пускает их в images.json;
-//   - cleanup-removed-cards.ts — вычищает уже опубликованные webp из docs/,
-//     их ключи из images.json и сырые файлы из IMAGES_PATH.
-// Снимаешь с игры ещё одну карту — просто дописывай id сюда и запускай
-// `bun run cleanup`.
-export const EXCLUDED_CARDS: ReadonlySet<string> = new Set([
-  "dark_paladin", "martyr_saint", "exsanguination_saint", "vinci_apprentice",
-  "flower_thrower", "hooded_vandal", "flagellant_prophet", "crusader",
-  "high_exorcist", "graffiti_rat", "solar_flagellant", "transfusion_nun",
-  "dismaland", "life_priest", "paladin", "quiet_inquisitor", "war_priest",
-  "pink_elephant", "blessing_knight", "corrupted_paladin", "martyr_shieldbearer",
-  "templar", "zeal_crusader", "archangel", "cathedral_gargoyle", "fallen_paladin",
-  "inquisitor", "supreme_archangel", "ward_relic", "absolution_angel",
-  "angel_of_death", "arch_angel_warrior", "chen", "fallen_angel", "omniknight",
-  "seraph_warrior", "balloon_girl", "dark_priest", "guardian_angel",
-  "halo_archer", "high_templar", "monkey_king", "monkey_clone", "redeemer_monk",
-  "relic_bearer", "sacred_monk", "shredded_masterpiece", "the_pale_rider",
-]);
+// Загрузчик стоп-листа снятых с игры карт. Сам список — в excluded-cards.txt
+// рядом (по одному id на строку, пустые строки и #-комментарии игнорируются):
+// плоский файл читается глазами, правится без кода и греппится из шелла.
+// Потребители: convert-to-webp.ts (не публикует эти карты) и
+// cleanup-removed-cards.ts (вычищает docs/ и сырые исходники).
+import { join } from "path";
+
+const listPath = join(import.meta.dir, "excluded-cards.txt");
+const lines = (await Bun.file(listPath).text()).split("\n");
+
+const ids: string[] = [];
+for (let i = 0; i < lines.length; i++) {
+  const line = lines[i].trim();
+  if (!line || line.startsWith("#")) continue;
+  if (!/^[a-z0-9_]+$/.test(line)) {
+    throw new Error(`excluded-cards.txt:${i + 1}: bad card id "${line}" (expected [a-z0-9_]+)`);
+  }
+  ids.push(line);
+}
+
+export const EXCLUDED_CARDS: ReadonlySet<string> = new Set(ids);
+
+if (EXCLUDED_CARDS.size === 0) {
+  // Пустой список валиден, но чаще это случайно обрезанный файл — а он молча
+  // выключил бы стоп-лист конвертера. Пусть будет заметно.
+  console.warn(`Warning: ${listPath} lists no cards — the excluded-cards guard is a no-op.`);
+}

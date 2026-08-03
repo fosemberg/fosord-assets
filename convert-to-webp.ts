@@ -58,7 +58,7 @@ const parsed = pngFiles.map(file => {
 // CONTENT_AUDIT_RU.md in the fosord repo). Their raw PNGs may still sit in
 // IMAGES_PATH, but they must never be published or indexed again — without
 // this guard a full `bun run start` would resurrect them in images.json.
-// The list lives in excluded-cards.ts (shared with `bun run cleanup`).
+// The id list lives in excluded-cards.txt (shared with `bun run cleanup`).
 const published = parsed.filter(p => !EXCLUDED_CARDS.has(p.id));
 {
   const dropped = parsed.length - published.length;

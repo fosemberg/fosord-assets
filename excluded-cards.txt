@@ -1,0 +1,54 @@
+# Карты, снятые с игры контент-аудитом для РФ-релиза
+# (CONTENT_AUDIT_RU.md в репо fosord, PR fosemberg/fosord#319).
+#
+# По одному id на строку, пустые строки и #-комментарии игнорируются.
+# Снимаешь с игры ещё одну карту — дописываешь id и гонишь `bun run cleanup`;
+# конвертер (`bun run start`) читает этот же список и не публикует их.
+absolution_angel
+angel_of_death
+arch_angel_warrior
+archangel
+balloon_girl
+blessing_knight
+cathedral_gargoyle
+chen
+corrupted_paladin
+crusader
+dark_paladin
+dark_priest
+dismaland
+exsanguination_saint
+fallen_angel
+fallen_paladin
+flagellant_prophet
+flower_thrower
+graffiti_rat
+guardian_angel
+halo_archer
+high_exorcist
+high_templar
+hooded_vandal
+inquisitor
+life_priest
+martyr_saint
+martyr_shieldbearer
+monkey_clone
+monkey_king
+omniknight
+paladin
+pink_elephant
+quiet_inquisitor
+redeemer_monk
+relic_bearer
+sacred_monk
+seraph_warrior
+shredded_masterpiece
+solar_flagellant
+supreme_archangel
+templar
+the_pale_rider
+transfusion_nun
+vinci_apprentice
+war_priest
+ward_relic
+zeal_crusader

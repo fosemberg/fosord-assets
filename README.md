@@ -16,8 +16,9 @@ This project was created using `bun init` in bun v1.3.13. [Bun](https://bun.com)
 
 ## Подчистка снятых с игры карт
 
-Список удалённых контент-аудитом карт живёт в `excluded-cards.ts` — он общий
-для конвертера (`bun run start` их не публикует) и для чистилки:
+Список удалённых контент-аудитом карт живёт в `excluded-cards.txt` (по одному
+id на строку, `#`-комментарии; `excluded-cards.ts` — только загрузчик) — он
+общий для конвертера (`bun run start` их не публикует) и для чистилки:
 
 ```bash
 bun run cleanup                    # docs/ + images.json + сырые из IMAGES_PATH
@@ -30,5 +31,5 @@ bun run cleanup /path/to/raws      # явный путь к сырым вмес�
 
 Сырые PNG — оригиналы генераций (git их не хранит), поэтому по умолчанию они
 не удаляются, а переезжают в карантин `<raw>/_removed/`; конвертер в подпапки
-не заглядывает. Снял с игры ещё одну карту — допиши id в `excluded-cards.ts`
+не заглядывает. Снял с игры ещё одну карту — допиши id в `excluded-cards.txt`
 и прогони `bun run cleanup`.
