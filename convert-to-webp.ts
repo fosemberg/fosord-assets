@@ -53,9 +53,32 @@ const parsed = pngFiles.map(file => {
   return { file, name, id, segments, mono: isMono(segments) };
 });
 
+// Cards removed from the game by the RU-release content audit (see
+// CONTENT_AUDIT_RU.md in the fosord repo). Their raw PNGs may still sit in
+// IMAGES_PATH, but they must never be published or indexed again — without
+// this guard a full `bun run start` would resurrect them in images.json.
+const EXCLUDED_CARDS = new Set([
+  "dark_paladin", "martyr_saint", "exsanguination_saint", "vinci_apprentice",
+  "flower_thrower", "hooded_vandal", "flagellant_prophet", "crusader",
+  "high_exorcist", "graffiti_rat", "solar_flagellant", "transfusion_nun",
+  "dismaland", "life_priest", "paladin", "quiet_inquisitor", "war_priest",
+  "pink_elephant", "blessing_knight", "corrupted_paladin", "martyr_shieldbearer",
+  "templar", "zeal_crusader", "archangel", "cathedral_gargoyle", "fallen_paladin",
+  "inquisitor", "supreme_archangel", "ward_relic", "absolution_angel",
+  "angel_of_death", "arch_angel_warrior", "chen", "fallen_angel", "omniknight",
+  "seraph_warrior", "balloon_girl", "dark_priest", "guardian_angel",
+  "halo_archer", "high_templar", "monkey_king", "monkey_clone", "redeemer_monk",
+  "relic_bearer", "sacred_monk", "shredded_masterpiece", "the_pale_rider",
+]);
+const published = parsed.filter(p => !EXCLUDED_CARDS.has(p.id));
+{
+  const dropped = parsed.length - published.length;
+  if (dropped) console.log(`Skipping ${dropped} PNG(s) of cards removed from the game.`);
+}
+
 // images.json is rebuilt from scratch, so it must always see EVERY png —
 // otherwise a filtered run would drop the other half of the catalogue.
-for (const { id, segments } of parsed) {
+for (const { id, segments } of published) {
   if (segments.length) (cards[id] ??= []).push(segments.join("__"));
   else cards[id] ??= [];
 }
@@ -63,7 +86,7 @@ for (const { id, segments } of parsed) {
 const onlyMono = process.argv.includes("--mono");
 const noMono = process.argv.includes("--no-mono");
 const force = process.argv.includes("--force");
-const queue = parsed.filter(p => (onlyMono ? p.mono : noMono ? !p.mono : true));
+const queue = published.filter(p => (onlyMono ? p.mono : noMono ? !p.mono : true));
 
 const scope = onlyMono ? "mono skins only" : noMono ? "skipping mono skins" : "everything";
 console.log(`Found ${pngFiles.length} PNG file(s), converting ${queue.length} (${scope})...`);
