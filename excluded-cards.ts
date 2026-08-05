@@ -21,7 +21,7 @@ for (let i = 0; i < lines.length; i++) {
 export const EXCLUDED_CARDS: ReadonlySet<string> = new Set(ids);
 
 if (EXCLUDED_CARDS.size === 0) {
-  // Пустой список валиден, но чаще это случайно обрезанный файл — а он молча
-  // выключил бы стоп-лист конвертера. Пусть будет заметно.
-  console.warn(`Warning: ${listPath} lists no cards — the excluded-cards guard is a no-op.`);
+  // Пустой список — штатное состояние, пока карты банятся софтово
+  // (bannedDefaults.ts в репо fosord), а не удаляются с корнем.
+  console.log("excluded-cards.txt is empty — no cards are hard-removed.");
 }
