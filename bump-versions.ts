@@ -75,11 +75,40 @@ export async function bumpVersions(
   return { versions: sorted, missing };
 }
 
-if (import.meta.main) {
-  const args = process.argv.slice(2);
+/**
+ * Split CLI args into the optional `--dir <path>` and the file names.
+ *
+ * Exported because the CLI is the ONLY entry the regen flow uses
+ * (`bun run bump <name>` from tools/gen-art/regen.ts) — a unit test of
+ * `bumpVersions()` alone can't catch a parsing bug here, and a broken parse
+ * aborts a regen AFTER the (paid) art was generated. `dir` is null when the
+ * flag is absent; `dirMissingValue` flags a trailing `--dir` with nothing
+ * after it, which must fail loudly instead of silently using the default.
+ */
+export function parseBumpArgs(args: string[]): {
+  dir: string | null;
+  dirMissingValue: boolean;
+  names: string[];
+} {
   const dirIdx = args.indexOf("--dir");
-  const docsDir = dirIdx !== -1 ? args[dirIdx + 1] : join(import.meta.dir, "docs");
-  const names = args.filter((a, i) => a !== "--dir" && i !== dirIdx + 1);
+  // Drop the flag and its value — and nothing at all when the flag is absent.
+  // (A `i !== dirIdx + 1` filter without this guard ate argument 0 for
+  // dirIdx === -1, i.e. swallowed the first card name.)
+  const names = args.filter((_, i) => dirIdx === -1 || (i !== dirIdx && i !== dirIdx + 1));
+  return {
+    dir: dirIdx === -1 ? null : (args[dirIdx + 1] ?? null),
+    dirMissingValue: dirIdx !== -1 && args[dirIdx + 1] === undefined,
+    names,
+  };
+}
+
+if (import.meta.main) {
+  const { dir, dirMissingValue, names } = parseBumpArgs(process.argv.slice(2));
+  if (dirMissingValue) {
+    console.error("--dir needs a path");
+    process.exit(1);
+  }
+  const docsDir = dir ?? join(import.meta.dir, "docs");
   if (!names.length) {
     console.error("Usage: bun run bump-versions.ts [--dir docs] <name> [<name>...]  (name = webp base name, e.g. goblin__skin_bw)");
     process.exit(1);
