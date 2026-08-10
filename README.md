@@ -24,11 +24,18 @@ This project was created using `bun init` in bun v1.3.13. [Bun](https://bun.com)
 - `bun run bump <name> [...]` — stamp `docs/versions.json`, the **per-image
   cache-bust ledger**: `name` is a published file's base name (`goblin`,
   `goblin__skin_bw`), the value is a short content hash of its webp. The game
-  client appends that hash as the `?v=` of exactly that file, so a
-  regenerated image busts caches alone — the untouched catalogue keeps its
-  URLs (images absent from the ledger fall back to the client's global
-  version). Run it after `bun run start` re-encoded the named files; the
-  regen flows (`tools/gen-art/daemon.ts` / `regen.ts` in the game repo) call
-  it themselves. The ledger is committed state, not a build artifact.
+  client reads the ledger from this host (right next to `images.json`) and
+  appends that hash as the `?v=` of exactly that file, so a regenerated image
+  busts caches alone — the untouched catalogue keeps its URLs (images absent
+  from the ledger fall back to the client's global version). Because the
+  version lives WITH the file, every environment (prod, dev, the Yandex
+  flavour) busts off the same config. Run it after `bun run start` re-encoded
+  the named files; the regen flow (`tools/gen-art/regen.ts` in the game repo,
+  also the path the review-screen 🔄 daemon takes) calls it itself and commits
+  the ledger together with the art. The ledger is committed state, not a build
+  artifact; `docs/versions.json` simply doesn't exist until the first regen.
+  Optional `--dir <path>` overrides the `docs/` location (tests, dry runs).
 
-Tests: `bun test` (the ledger logic — `bump-versions.test.ts`).
+Tests: `bun test` — the ledger logic AND the CLI itself
+(`bump-versions.test.ts`): the regen flow only ever invokes this through
+`bun run bump <name>`, so argument parsing is covered end-to-end.

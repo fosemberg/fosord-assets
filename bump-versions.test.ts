@@ -1,8 +1,8 @@
 import { test, expect, beforeEach } from "bun:test";
-import { mkdtempSync } from "node:fs";
+import { mkdtempSync, mkdirSync, copyFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { bumpVersions, readVersions, VERSIONS_FILE } from "./bump-versions";
+import { bumpVersions, readVersions, parseBumpArgs, VERSIONS_FILE } from "./bump-versions";
 
 let dir: string;
 
@@ -55,4 +55,55 @@ test("a corrupt ledger degrades to empty instead of crashing the publish", async
 test("junk entries are filtered on read, valid ones survive", async () => {
   await Bun.write(join(dir, VERSIONS_FILE), JSON.stringify({ keep: "abc123", drop: 42, nested: { no: 1 } }));
   expect(await readVersions(dir)).toEqual({ keep: "abc123" });
+});
+
+// Разбор аргументов CLI — единственная точка входа регена
+// (`bun run bump <name>` из tools/gen-art/regen.ts). Юнит-тест самой
+// bumpVersions() сюда не достаёт, а сломанный разбор рушит реген уже ПОСЛЕ
+// оплаченной генерации арта.
+test("parseBumpArgs: без --dir имена не съедаются", () => {
+  expect(parseBumpArgs(["goblin"])).toEqual({ dir: null, dirMissingValue: false, names: ["goblin"] });
+  expect(parseBumpArgs(["goblin", "dragon__skin_bw"]).names).toEqual(["goblin", "dragon__skin_bw"]);
+});
+
+test("parseBumpArgs: --dir и его значение выкидываются из имён", () => {
+  expect(parseBumpArgs(["--dir", "docs", "goblin"]))
+    .toEqual({ dir: "docs", dirMissingValue: false, names: ["goblin"] });
+  // Флаг может стоять и после имён.
+  expect(parseBumpArgs(["goblin", "--dir", "out"]))
+    .toEqual({ dir: "out", dirMissingValue: false, names: ["goblin"] });
+});
+
+test("parseBumpArgs: висячий --dir помечается, а не молча берёт дефолт", () => {
+  expect(parseBumpArgs(["goblin", "--dir"]))
+    .toEqual({ dir: null, dirMissingValue: true, names: ["goblin"] });
+});
+
+test("CLI целиком: `bun bump-versions.ts <name>` без --dir пишет леджер рядом со скриптом", async () => {
+  // Копия скрипта во временную папку: дефолтный docsDir — join(import.meta.dir,
+  // "docs"), так что прогон не трогает настоящий docs/ репозитория.
+  const home = mkdtempSync(join(tmpdir(), "fosord-bump-cli-"));
+  mkdirSync(join(home, "docs"));
+  copyFileSync(join(import.meta.dir, "bump-versions.ts"), join(home, "bump-versions.ts"));
+  await Bun.write(join(home, "docs", "goblin__skin_bw.webp"), "ink");
+
+  const r = Bun.spawnSync(["bun", join(home, "bump-versions.ts"), "goblin__skin_bw"]);
+  expect(r.stderr.toString()).toBe("");
+  expect(r.exitCode).toBe(0);
+
+  expect(await readVersions(join(home, "docs"))).toEqual({
+    goblin__skin_bw: expect.stringMatching(/^[0-9a-f]{8}$/) as unknown as string,
+  });
+});
+
+test("CLI: несколько имён — все попадают в леджер", async () => {
+  const home = mkdtempSync(join(tmpdir(), "fosord-bump-cli-"));
+  mkdirSync(join(home, "docs"));
+  copyFileSync(join(import.meta.dir, "bump-versions.ts"), join(home, "bump-versions.ts"));
+  await Bun.write(join(home, "docs", "goblin.webp"), "art");
+  await Bun.write(join(home, "docs", "dragon.webp"), "art2");
+
+  const r = Bun.spawnSync(["bun", join(home, "bump-versions.ts"), "goblin", "dragon"]);
+  expect(r.exitCode).toBe(0);
+  expect(Object.keys(await readVersions(join(home, "docs"))).sort()).toEqual(["dragon", "goblin"]);
 });
