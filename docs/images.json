@@ -483,6 +483,7 @@
   "siren": [
     "skin_bw"
   ],
+  "kas_bracelet": [],
   "omniknight": [
     "skin_bw"
   ],
@@ -4614,5 +4615,6 @@
   ],
   "bronze_automaton": [
     "skin_bw"
-  ]
+  ],
+  "terracotta_maiden": []
 }
