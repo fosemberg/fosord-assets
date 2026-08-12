@@ -192,6 +192,7 @@
   "void_elemental": [
     "skin_bw"
   ],
+  "healing_shrine": [],
   "singularity_child": [
     "skin_bw"
   ],
@@ -964,6 +965,7 @@
   "coal_mortar": [
     "skin_bw"
   ],
+  "earth_rampart": [],
   "cathedral_gargoyle": [
     "skin_bw"
   ],
@@ -1747,6 +1749,7 @@
     "skin_2",
     "skin_4"
   ],
+  "siege_bastion": [],
   "net_fighter": [
     "skin_bw"
   ],
@@ -2493,6 +2496,7 @@
   "fork_lightning_adept": [
     "skin_bw"
   ],
+  "iron_gate": [],
   "forest_nomad": [
     "skin_bw"
   ],
@@ -2824,6 +2828,7 @@
   "ice_knight": [
     "skin_bw"
   ],
+  "watch_beacon": [],
   "sea_spirit": [
     "skin_bw"
   ],
@@ -3067,6 +3072,7 @@
   "dragonborn_warrior": [
     "skin_bw"
   ],
+  "ballista_tower": [],
   "berserker_norseman": [
     "skin_bw"
   ],
@@ -3094,6 +3100,7 @@
   "automaton": [
     "skin_bw"
   ],
+  "spiked_barricade": [],
   "blood_titan": [
     "skin_bw"
   ],
@@ -3261,6 +3268,7 @@
   "void_dancer": [
     "skin_bw"
   ],
+  "guard_blockhouse": [],
   "poison_dart_warrior": [
     "skin_bw"
   ],
@@ -3996,6 +4004,7 @@
     "skin_bw",
     "skin_4"
   ],
+  "war_altar": [],
   "knight": [
     "skin_bw"
   ],
@@ -4068,6 +4077,7 @@
   "goblin": [
     "skin_bw"
   ],
+  "mortar_emplacement": [],
   "grave_revenant": [
     "skin_bw"
   ],
@@ -4161,6 +4171,7 @@
   "mountain_bandit": [
     "skin_bw"
   ],
+  "arrow_tower": [],
   "beast_hunter": [
     "skin_bw"
   ],
@@ -4264,6 +4275,7 @@
   "ankh_guardian": [
     "skin_bw"
   ],
+  "wooden_palisade": [],
   "qilin": [
     "skin_bw"
   ],
@@ -4586,6 +4598,7 @@
   "void_shaman": [
     "skin_bw"
   ],
+  "stone_wall": [],
   "nessaj": [
     "skin_bw"
   ],
@@ -4607,16 +4620,19 @@
   "temple_warrior": [
     "skin_bw"
   ],
+  "flame_turret": [],
   "sanctified_healer": [
     "skin_bw"
   ],
   "mountain_troll": [
     "skin_bw"
   ],
+  "venom_sprayer": [],
   "abyssal_scribe": [],
   "puppet_master": [
     "skin_bw"
   ],
+  "watchtower": [],
   "discharge_monk": [
     "skin_bw"
   ],
