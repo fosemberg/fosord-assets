@@ -126,7 +126,7 @@
   "the_pale_rider": [
     "skin_bw"
   ],
-  "aurora_cleric": [
+  "aurora_adept": [
     "skin_bw"
   ],
   "molten_bulwark": [
@@ -153,7 +153,7 @@
   "judgement_herald": [
     "skin_bw"
   ],
-  "death_god": [
+  "death_lord": [
     "skin_bw"
   ],
   "primordial_beast": [
@@ -192,7 +192,7 @@
   "void_elemental": [
     "skin_bw"
   ],
-  "healing_shrine": [],
+  "healing_well": [],
   "singularity_child": [
     "skin_bw"
   ],
@@ -395,10 +395,10 @@
   "morphling": [
     "skin_bw"
   ],
-  "blessed_knight": [
+  "sunlit_knight": [
     "skin_bw"
   ],
-  "temple_champion": [
+  "citadel_champion": [
     "skin_bw"
   ],
   "forensic_doctor": [
@@ -504,7 +504,7 @@
   "chameleon_stalker": [
     "skin_bw"
   ],
-  "crusader": [
+  "sun_knight": [
     "skin_bw"
   ],
   "throat_cutter": [
@@ -517,7 +517,7 @@
     "skin_3",
     "skin_4"
   ],
-  "death_cleric": [
+  "death_acolyte": [
     "skin_bw"
   ],
   "blue_dragon": [
@@ -532,7 +532,7 @@
   "storm_lord": [
     "skin_bw"
   ],
-  "prophet_treant": [
+  "oak_treant": [
     "skin_bw"
   ],
   "golem_of_war": [
@@ -603,7 +603,7 @@
   "chaos_warrior": [
     "skin_bw"
   ],
-  "fallen_angel": [
+  "fallen_herald": [
     "skin_bw"
   ],
   "death_warlock": [
@@ -633,7 +633,7 @@
   "despair_demon": [
     "skin_bw"
   ],
-  "death_angel": [
+  "ash_herald": [
     "skin_bw"
   ],
   "poison_blade_rogue": [
@@ -714,13 +714,13 @@
   "runecaster": [
     "skin_bw"
   ],
-  "gore_flinger": [
+  "crimson_flinger": [
     "skin_bw"
   ],
   "war_medic": [
     "skin_bw"
   ],
-  "blood_thrall": [
+  "crimson_thrall": [
     "skin_bw"
   ],
   "celestial_mage": [
@@ -732,7 +732,7 @@
   "pollen_witch": [
     "skin_bw"
   ],
-  "blood_titan_supreme": [
+  "crimson_titan_supreme": [
     "skin_bw"
   ],
   "robot_knight": [
@@ -766,7 +766,7 @@
   "shadow_toll_keeper": [
     "skin_bw"
   ],
-  "sun_priest": [
+  "sun_keeper": [
     "skin_bw"
   ],
   "spider": [
@@ -868,7 +868,7 @@
   "serpent_cultist": [
     "skin_bw"
   ],
-  "torment_demon": [
+  "debt_demon": [
     "skin_bw"
   ],
   "orc_berserker": [
@@ -929,7 +929,7 @@
   "flower_thrower": [
     "skin_bw"
   ],
-  "absolution_angel": [
+  "cleansing_herald": [
     "skin_bw"
   ],
   "undying_zombie": [
@@ -966,7 +966,7 @@
     "skin_bw"
   ],
   "earth_rampart": [],
-  "cathedral_gargoyle": [
+  "observatory_gargoyle": [
     "skin_bw"
   ],
   "mechanical_archer": [
@@ -981,7 +981,7 @@
   "puppet_warrior": [
     "skin_bw"
   ],
-  "falcon_god_warrior": [
+  "horus_warrior": [
     "skin_bw"
   ],
   "case_files_chief": [
@@ -990,7 +990,7 @@
   "shadow_mage_elite": [
     "skin_bw"
   ],
-  "divine_healer": [
+  "radiant_healer": [
     "skin_bw"
   ],
   "void_titan": [
@@ -1162,7 +1162,7 @@
   "grove_sprout": [
     "skin_bw"
   ],
-  "corrupted_paladin": [
+  "corrupted_vanguard": [
     "skin_bw"
   ],
   "glacier_spirit": [
@@ -1175,7 +1175,7 @@
     "skin_2",
     "skin_bw"
   ],
-  "martyr_saint": [
+  "radiant_protector": [
     "skin_bw"
   ],
   "abyssal_horror": [
@@ -1184,7 +1184,7 @@
   "rune_breaker": [
     "skin_bw"
   ],
-  "pilgrim_of_light": [
+  "light_wanderer": [
     "skin_bw"
   ],
   "storm_beacon": [
@@ -1269,13 +1269,13 @@
   "kraken_cultist": [
     "skin_bw"
   ],
-  "blood_warlock": [
+  "crimson_warlock": [
     "skin_bw"
   ],
   "depth_horror": [
     "skin_bw"
   ],
-  "angel_warrior": [
+  "winged_warrior": [
     "skin_bw"
   ],
   "cavern_beast": [
@@ -1284,7 +1284,7 @@
   "nether_ward": [
     "skin_bw"
   ],
-  "transfusion_nun": [
+  "crimson_sister": [
     "skin_bw"
   ],
   "moraine_devourer": [
@@ -1293,7 +1293,7 @@
   "blade_master": [
     "skin_bw"
   ],
-  "plague_god": [
+  "pestilence_lord": [
     "skin_bw"
   ],
   "worker_wasp": [
@@ -1302,7 +1302,7 @@
   "iron_king": [
     "skin_bw"
   ],
-  "divine_arbiter": [
+  "light_arbiter": [
     "skin_bw"
   ],
   "fae_queen": [
@@ -1324,7 +1324,7 @@
     "skin_2",
     "skin_3"
   ],
-  "halo_archer": [
+  "dawn_archer": [
     "skin_bw"
   ],
   "cursed_warrior": [
@@ -1332,7 +1332,7 @@
     "skin_bw",
     "skin_2"
   ],
-  "battle_cleric": [
+  "battle_mender": [
     "skin_bw"
   ],
   "roc": [
@@ -1347,7 +1347,7 @@
   "glassblower": [
     "skin_bw"
   ],
-  "bloodpact_witch": [
+  "ruby_pact_witch": [
     "skin_bw"
   ],
   "yeti": [
@@ -1406,7 +1406,7 @@
   "dirge_singer": [
     "skin_bw"
   ],
-  "inquisitor": [
+  "thief_taker": [
     "skin_bw"
   ],
   "icarus": [
@@ -1422,7 +1422,7 @@
     "skin_bw"
   ],
   "deep_rune_reader": [],
-  "unholy_knight": [
+  "cursed_knight": [
     "skin_bw"
   ],
   "giant_ox": [
@@ -1465,7 +1465,7 @@
     "skin_4",
     "skin_2"
   ],
-  "war_cleric": [
+  "battle_acolyte": [
     "skin_bw"
   ],
   "winter_wyvern": [
@@ -1499,7 +1499,7 @@
   "chariot_warrior": [
     "skin_bw"
   ],
-  "guardian_angel": [
+  "winged_guardian": [
     "skin_bw"
   ],
   "kobold": [
@@ -1541,7 +1541,7 @@
   "centaur_warrunner": [
     "skin_bw"
   ],
-  "blood_shaman": [
+  "crimson_shaman": [
     "skin_bw"
   ],
   "heavy_gladiator": [
@@ -1619,7 +1619,7 @@
   "first_warrior": [
     "skin_bw"
   ],
-  "quiet_inquisitor": [
+  "quiet_marshal": [
     "skin_bw"
   ],
   "bandit": [
@@ -1673,7 +1673,7 @@
   "jungle_troll": [
     "skin_bw"
   ],
-  "blood_sorcerer": [
+  "crimson_sorcerer": [
     "skin_bw"
   ],
   "witch_doctor": [
@@ -1685,7 +1685,7 @@
   "ice_hydra": [
     "skin_bw"
   ],
-  "open_wounds_butcher": [
+  "crimson_brute": [
     "skin_bw"
   ],
   "rust_golem": [
@@ -1703,13 +1703,13 @@
   "quetzalcoatl": [
     "skin_bw"
   ],
-  "chaos_paladin": [
+  "chaos_vanguard": [
     "skin_bw"
   ],
   "plague_skeleton": [
     "skin_bw"
   ],
-  "holy_archer": [
+  "radiant_archer": [
     "skin_bw"
   ],
   "death_lich": [
@@ -1877,7 +1877,7 @@
   "ravager": [
     "skin_bw"
   ],
-  "isis_priestess": [
+  "isis_dancer": [
     "skin_bw"
   ],
   "sand_king": [
@@ -1946,7 +1946,7 @@
   "giant_centipede": [
     "skin_bw"
   ],
-  "herald_angel": [
+  "winged_herald": [
     "skin_bw"
   ],
   "gladiator": [
@@ -2031,7 +2031,7 @@
   "storm_giant": [
     "skin_bw"
   ],
-  "divine_archmage": [
+  "light_archmage": [
     "skin_bw"
   ],
   "world_seed": [
@@ -2046,7 +2046,7 @@
   "fox_spirit": [
     "skin_bw"
   ],
-  "sacred_crocodile": [
+  "nile_crocodile": [
     "skin_bw"
   ],
   "tidal_knight": [
@@ -2061,7 +2061,7 @@
   "war_elephant": [
     "skin_bw"
   ],
-  "vein_ripper": [
+  "crimson_reaver": [
     "skin_bw"
   ],
   "death_harbinger": [
@@ -2079,7 +2079,7 @@
   "earth_monk": [
     "skin_bw"
   ],
-  "blood_queen": [
+  "crimson_queen": [
     "skin_bw"
   ],
   "world_serpent_ancient": [
@@ -2219,7 +2219,7 @@
   "scorpion_war": [
     "skin_bw"
   ],
-  "choir_priestess": [
+  "choir_singer": [
     "skin_bw"
   ],
   "void_monk": [
@@ -2309,7 +2309,7 @@
   "enchantress": [
     "skin_bw"
   ],
-  "dark_priest": [
+  "eclipse_astronomer": [
     "skin_bw"
   ],
   "timbersaw": [
@@ -2369,13 +2369,13 @@
   "snowstorm_spirit": [
     "skin_bw"
   ],
-  "supreme_archangel": [
+  "supreme_herald": [
     "skin_bw"
   ],
   "oak_sapling": [
     "skin_bw"
   ],
-  "war_angel": [
+  "war_herald": [
     "skin_bw"
   ],
   "lycan_wolf": [
@@ -2390,7 +2390,7 @@
   "temporal_mage": [
     "skin_bw"
   ],
-  "sacred_paladin": [
+  "solar_vanguard": [
     "skin_bw"
   ],
   "werewolf": [
@@ -2422,13 +2422,13 @@
   "swamp_giant": [
     "skin_bw"
   ],
-  "blood_altar_keeper": [
+  "crimson_keeper": [
     "skin_bw"
   ],
   "steppe_rider": [
     "skin_bw"
   ],
-  "ice_god": [
+  "ice_lord": [
     "skin_bw"
   ],
   "entropy_lord": [
@@ -2470,13 +2470,13 @@
   "earth_knight": [
     "skin_bw"
   ],
-  "fire_god": [
+  "fire_lord": [
     "skin_bw"
   ],
   "veteran_hunter": [
     "skin_bw"
   ],
-  "high_templar": [
+  "high_dawn_warden": [
     "skin_bw"
   ],
   "archmage": [
@@ -2543,7 +2543,7 @@
   "undead_dragon": [
     "skin_bw"
   ],
-  "storm_worshipper": [
+  "storm_chaser": [
     "skin_bw"
   ],
   "void_warlock": [
@@ -2590,7 +2590,7 @@
   "riddle_keeper": [
     "skin_bw"
   ],
-  "holy_sprite": [
+  "radiant_sprite": [
     "skin_bw"
   ],
   "pain_wraith": [
@@ -2656,7 +2656,7 @@
     "skin_4",
     "skin_bw"
   ],
-  "angel_of_death": [
+  "end_herald": [
     "skin_bw"
   ],
   "acid_thrower": [
@@ -2683,7 +2683,7 @@
   "death_blade": [
     "skin_bw"
   ],
-  "blood_knight": [
+  "scarlet_knight": [
     "skin_bw"
   ],
   "zeus": [
@@ -2701,7 +2701,7 @@
   "aboleth": [
     "skin_bw"
   ],
-  "sundial_priest": [
+  "sundial_keeper": [
     "skin_bw"
   ],
   "imp_soldier": [
@@ -2713,7 +2713,7 @@
   "mummy_pharaoh": [
     "skin_bw"
   ],
-  "blood_paladin": [
+  "crimson_vanguard": [
     "skin_bw"
   ],
   "star_titan": [
@@ -2728,7 +2728,7 @@
   "undead_wolf": [
     "skin_bw"
   ],
-  "zeal_crusader": [
+  "zeal_knight": [
     "skin_bw"
   ],
   "warlock": [
@@ -2839,7 +2839,7 @@
   "shadow_ninja": [
     "skin_bw"
   ],
-  "life_priest": [
+  "life_keeper": [
     "skin_bw"
   ],
   "lion": [
@@ -2890,7 +2890,7 @@
   "mourning_veil": [
     "skin_bw"
   ],
-  "blood_skeleton": [
+  "crimson_skeleton": [
     "skin_bw"
   ],
   "shadow_vampire": [
@@ -2923,7 +2923,7 @@
   "elf_ranger": [
     "skin_bw"
   ],
-  "blood_acolyte": [
+  "crimson_acolyte": [
     "skin_bw"
   ],
   "earthshaker": [
@@ -2932,7 +2932,7 @@
   "marci": [
     "skin_bw"
   ],
-  "sky_god": [
+  "sky_lord": [
     "skin_bw"
   ],
   "mountain_king": [
@@ -2999,7 +2999,7 @@
   "riki": [
     "skin_bw"
   ],
-  "shadow_god": [
+  "shadow_lord": [
     "skin_bw"
   ],
   "desert_cobra": [
@@ -3016,7 +3016,7 @@
   "balanar": [
     "skin_bw"
   ],
-  "war_priest": [
+  "sun_marshal": [
     "skin_bw"
   ],
   "timeline_guardian": [
@@ -3028,7 +3028,7 @@
   "arch_summoner": [
     "skin_bw"
   ],
-  "lightning_paladin": [
+  "lightning_vanguard": [
     "skin_bw"
   ],
   "mirror_entity": [
@@ -3058,7 +3058,7 @@
   "arc_warden": [
     "skin_bw"
   ],
-  "archangel": [
+  "sun_herald": [
     "skin_bw"
   ],
   "warthog": [
@@ -3102,7 +3102,7 @@
     "skin_bw"
   ],
   "spiked_barricade": [],
-  "blood_titan": [
+  "crimson_titan": [
     "skin_bw"
   ],
   "earth_elemental": [
@@ -3117,7 +3117,7 @@
   "wild_elf_warrior": [
     "skin_bw"
   ],
-  "blood_archmage": [
+  "crimson_archmage": [
     "skin_bw"
   ],
   "zephyr_duelist": [
@@ -3135,7 +3135,7 @@
   "seed_sower": [
     "skin_bw"
   ],
-  "paladin": [
+  "vanguard_knight": [
     "skin_bw"
   ],
   "gyrocopter": [
@@ -3159,10 +3159,10 @@
   "storm_berserker_elite": [
     "skin_bw"
   ],
-  "exsanguination_saint": [
+  "crimson_lady": [
     "skin_bw"
   ],
-  "war_god": [
+  "war_sovereign": [
     "skin_3",
     "skin_bw",
     "skin_2"
@@ -3185,7 +3185,7 @@
   "fenrir_spawn": [
     "skin_bw"
   ],
-  "hemomancer": [
+  "crimson_mancer": [
     "skin_bw"
   ],
   "plains_nomad": [
@@ -3295,13 +3295,13 @@
   "sea_serpent": [
     "skin_bw"
   ],
-  "war_goddess": [
+  "war_queen": [
     "skin_bw"
   ],
   "earth_golem": [
     "skin_bw"
   ],
-  "spectral_paladin": [
+  "spectral_vanguard": [
     "skin_bw"
   ],
   "wyvern": [
@@ -3331,7 +3331,7 @@
   "gravity_mage": [
     "skin_bw"
   ],
-  "blood_devotee": [
+  "crimson_devotee": [
     "skin_bw"
   ],
   "abyssal_guardian": [
@@ -3398,7 +3398,7 @@
   "drow_ranger": [
     "skin_bw"
   ],
-  "relic_bearer": [
+  "orrery_bearer": [
     "skin_bw"
   ],
   "necromancer": [
@@ -3494,13 +3494,13 @@
   "wind_dancer_elite": [
     "skin_bw"
   ],
-  "solar_flagellant": [
+  "solar_paragon": [
     "skin_bw"
   ],
-  "executioner": [
+  "gaoler": [
     "skin_bw"
   ],
-  "martyr_shieldbearer": [
+  "shieldbearer_protector": [
     "skin_bw"
   ],
   "time_devourer": [
@@ -3601,7 +3601,7 @@
   "chaos_shaman_minor": [
     "skin_bw"
   ],
-  "fallen_paladin": [
+  "fallen_vanguard": [
     "skin_bw"
   ],
   "dwarf_axeman": [
@@ -3632,7 +3632,7 @@
   "grand_necromancer": [
     "skin_bw"
   ],
-  "nature_god": [
+  "nature_lord": [
     "skin_bw"
   ],
   "hedge_knight": [
@@ -3667,7 +3667,7 @@
     "skin_3",
     "skin_bw"
   ],
-  "blood_nurse": [
+  "crimson_nurse": [
     "skin_bw"
   ],
   "vine_spirit": [
@@ -3788,7 +3788,7 @@
   "shadow_warlock": [
     "skin_bw"
   ],
-  "arch_cleric": [
+  "arch_mender": [
     "skin_bw"
   ],
   "fate_weaver": [
@@ -3882,7 +3882,7 @@
   "four_armed_ashik": [
     "skin_bw"
   ],
-  "templar": [
+  "dawn_warden": [
     "skin_bw"
   ],
   "sovereign_of_fire": [
@@ -3891,7 +3891,7 @@
   "ichor_alchemist": [
     "skin_bw"
   ],
-  "redeemer_monk": [
+  "wandering_adept": [
     "skin_bw"
   ],
   "gloom_ambusher": [
@@ -3940,7 +3940,7 @@
   "ancient_apparition": [
     "skin_bw"
   ],
-  "blessing_knight": [
+  "boon_knight": [
     "skin_bw"
   ],
   "void_incarnate": [
@@ -3949,7 +3949,7 @@
   "templar_assassin": [
     "skin_bw"
   ],
-  "arch_angel_warrior": [
+  "herald_warrior": [
     "skin_bw"
   ],
   "war_engine_crew": [
@@ -3996,7 +3996,7 @@
   "mars": [
     "skin_bw"
   ],
-  "high_exorcist": [
+  "high_astronomer": [
     "skin_bw"
   ],
   "anatomist": [
@@ -4006,11 +4006,11 @@
     "skin_bw",
     "skin_4"
   ],
-  "war_altar": [],
+  "war_standard": [],
   "knight": [
     "skin_bw"
   ],
-  "blood_revenant": [
+  "crimson_revenant": [
     "skin_bw"
   ],
   "undead_sorcerer": [
@@ -4034,10 +4034,10 @@
   "ogre_magi": [
     "skin_bw"
   ],
-  "divine_champion": [
+  "light_champion": [
     "skin_bw"
   ],
-  "seraph_warrior": [
+  "six_winged_warden": [
     "skin_bw"
   ],
   "street_urchin": [
@@ -4083,13 +4083,13 @@
   "grave_revenant": [
     "skin_bw"
   ],
-  "blood_mage": [
+  "crimson_mage": [
     "skin_bw"
   ],
   "arcane_cannon_mage": [
     "skin_bw"
   ],
-  "blood_cultist": [
+  "crimson_cultist": [
     "skin_bw"
   ],
   "ember_golem": [
@@ -4220,7 +4220,7 @@
   "glacier_ram": [
     "skin_bw"
   ],
-  "chaos_zealot": [
+  "chaos_fanatic": [
     "skin_bw"
   ],
   "basilisk": [
@@ -4235,7 +4235,7 @@
   "fire_mage_elite": [
     "skin_bw"
   ],
-  "rain_deity_warrior": [
+  "rain_caller_warrior": [
     "skin_bw"
   ],
   "wolf_tracker": [
@@ -4323,7 +4323,7 @@
   "arch_demon": [
     "skin_bw"
   ],
-  "blood_oracle": [
+  "crimson_oracle": [
     "skin_bw"
   ],
   "void_sorcerer": [
@@ -4365,7 +4365,7 @@
   "armored_skeleton": [
     "skin_bw"
   ],
-  "dice_priest": [
+  "dice_caller": [
     "skin_bw"
   ],
   "minotaur": [
@@ -4422,7 +4422,7 @@
   "goblin_rogue": [
     "skin_bw"
   ],
-  "dark_paladin": [
+  "dark_vanguard": [
     "skin_bw"
   ],
   "flea_ringmaster": [
@@ -4443,7 +4443,7 @@
   "chaos_mage": [
     "skin_bw"
   ],
-  "flagellant_prophet": [
+  "chain_light_herald": [
     "skin_bw"
   ],
   "mushroom_golem": [
@@ -4503,13 +4503,13 @@
   "crystal_knight": [
     "skin_bw"
   ],
-  "sacred_monk": [
+  "sun_monk": [
     "skin_bw"
   ],
   "star_dancer": [
     "skin_bw"
   ],
-  "blood_mutant": [
+  "crimson_mutant": [
     "skin_bw"
   ],
   "magnus": [
@@ -4521,7 +4521,7 @@
   "khan_guard": [
     "skin_bw"
   ],
-  "holy_titan": [
+  "radiant_titan": [
     "skin_bw"
   ],
   "carnivore_plant": [
@@ -4546,7 +4546,7 @@
   "void_origin": [
     "skin_bw"
   ],
-  "divine_guard": [
+  "solar_guard": [
     "skin_bw"
   ],
   "ninja_apprentice": [
@@ -4567,10 +4567,10 @@
   "stone_golem_elder": [
     "skin_bw"
   ],
-  "blood_wolf": [
+  "crimson_wolf": [
     "skin_bw"
   ],
-  "ward_relic": [
+  "ward_orrery": [
     "skin_bw"
   ],
   "tidal_champion": [
@@ -4585,7 +4585,7 @@
   "thunder_drummer": [
     "skin_bw"
   ],
-  "blood_emperor": [
+  "crimson_emperor": [
     "skin_bw"
   ],
   "visage": [
@@ -4619,11 +4619,11 @@
   "furnace_keeper": [
     "skin_bw"
   ],
-  "temple_warrior": [
+  "citadel_warrior": [
     "skin_bw"
   ],
   "flame_turret": [],
-  "sanctified_healer": [
+  "sunlit_healer": [
     "skin_bw"
   ],
   "mountain_troll": [
