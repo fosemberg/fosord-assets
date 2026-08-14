@@ -39,13 +39,11 @@ This project was created using `bun init` in bun v1.3.13. [Bun](https://bun.com)
 - `bun run rename-ids <map.json> [--dir docs] [--ext webp] [--dry-run]` — apply
   a card-id rename to the published art: `git mv`s every `<old>.webp` /
   `<old>__skin_*.webp` and rekeys both indexes (`versions.json` by file name,
-  `images.json` by bare id). `map.json` is a flat `{"old_id": "new_id"}` — the
-  same shape as `CARD_ID_MIGRATIONS` in the game repo
-  (`common/src/cards/idMigrations.ts`), which is the source of truth for
-  renames. **Run it against the raw-PNG repo too**
+  `images.json` by bare id). `map.json` is a flat `{"old_id": "new_id"}`.
+  **Run it against the raw-PNG repo too**
   (`bun run rename-ids map.json --dir $IMAGES_PATH --ext png`): `bun run start`
-  rebuilds `images.json` from the png listing, so a leftover `crusader.png`
-  would republish the old file and resurrect the old key on the next run.
+  rebuilds `images.json` from the png listing, so a leftover png under its old
+  name would republish the old file and resurrect the old key on the next run.
 
 Tests: `bun test` — the ledger logic AND the CLI itself
 (`bump-versions.test.ts`): the regen flow only ever invokes this through
