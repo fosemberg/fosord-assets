@@ -35,7 +35,7 @@
   "cave_bear": [
     "skin_bw"
   ],
-  "shredded_masterpiece": [
+  "living_canvas": [
     "skin_bw"
   ],
   "skeletal_mage": [
@@ -926,7 +926,7 @@
   "magnifying_sleuth": [
     "skin_bw"
   ],
-  "flower_thrower": [
+  "flower_vendor": [
     "skin_bw"
   ],
   "cleansing_herald": [
@@ -1140,7 +1140,7 @@
   "merfolk_spear": [
     "skin_bw"
   ],
-  "pipe_detective": [
+  "magnifier_detective": [
     "skin_bw"
   ],
   "merfolk_archer": [
@@ -1759,7 +1759,7 @@
   "perpetuum_keeper": [
     "skin_bw"
   ],
-  "dismaland": [
+  "derelict_funfair": [
     "skin_bw"
   ],
   "warchief": [
@@ -1826,7 +1826,7 @@
   "flesh_golem_chaos": [
     "skin_bw"
   ],
-  "ante_gambler": [
+  "daredevil": [
     "skin_bw"
   ],
   "spectral_knight": [
@@ -2103,7 +2103,7 @@
   "keeper_of_the_light": [
     "skin_bw"
   ],
-  "blind_poker_player": [
+  "blind_diviner": [
     "skin_bw"
   ],
   "master_ninja": [
@@ -2482,7 +2482,7 @@
   "archmage": [
     "skin_bw"
   ],
-  "hooded_vandal": [
+  "stencil_artist": [
     "skin_bw"
   ],
   "runic_caster": [
@@ -3919,7 +3919,7 @@
     "skin_bw"
   ],
   "runestone_crab": [],
-  "balloon_girl": [
+  "lantern_girl": [
     "skin_bw"
   ],
   "corpse_warrior": [
@@ -3962,7 +3962,7 @@
   "shadow_gargoyle": [
     "skin_bw"
   ],
-  "card_sharp": [
+  "illusionist": [
     "skin_bw"
   ],
   "mangrove_guardian": [
@@ -4006,7 +4006,7 @@
     "skin_bw",
     "skin_4"
   ],
-  "war_standard": [],
+  "war_stone": [],
   "knight": [
     "skin_bw"
   ],
@@ -4134,7 +4134,7 @@
   "sea_demon": [
     "skin_bw"
   ],
-  "gambler": [
+  "fortune_seeker": [
     "skin_bw"
   ],
   "undead_dragon_bone": [
@@ -4555,7 +4555,7 @@
   "fairy_archer": [
     "skin_bw"
   ],
-  "graffiti_rat": [
+  "paint_rat": [
     "skin_bw"
   ],
   "cliff_hawk": [
