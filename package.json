@@ -4,7 +4,8 @@
   "scripts": {
     "start": "bun --env-file=.env convert-to-webp.ts",
     "mono": "bun --env-file=.env convert-to-webp.ts --mono",
-    "bump": "bun bump-versions.ts"
+    "bump": "bun bump-versions.ts",
+    "rename-ids": "bun rename-ids.ts"
   },
   "devDependencies": {
     "@types/bun": "^1.3.14",
