@@ -18,9 +18,11 @@ This project was created using `bun init` in bun v1.3.13. [Bun](https://bun.com)
 
 - `bun run start` — convert every raw PNG from `$IMAGES_PATH` to webp in
   `docs/` and rebuild `docs/images.json` (the card→variants index the game
-  client loads). Two-tone `skin_bw` sets are encoded lossless automatically.
-- `bun run mono` — same, narrowed to the two-tone mono skins (`--force` to
-  re-publish re-rolled ones).
+  client loads). The encoder is picked per file from the name: `__skin_bw`
+  (two-tone ink) goes lossless, everything else lossy — no flag to remember.
+  Files whose webp already exists are skipped; `--force` re-encodes them
+  (the regen flow instead deletes the stale webp for exactly the ids it
+  re-rolled, so a normal run republishes them).
 - `bun run bump <name> [...]` — stamp `docs/versions.json`, the **per-image
   cache-bust ledger**: `name` is a published file's base name (`goblin`,
   `goblin__skin_bw`), the value is a short content hash of its webp. The game

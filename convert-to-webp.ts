@@ -37,12 +37,15 @@ const cards: Record<string, string[]> = {};
 // Two-tone ink sets are generated as strictly (0,0,0)/(255,255,255) images
 // (gen-art `--skin bw` binarizes every render). Lossy webp would smear gray
 // fringes along every stroke and undo that; on flat two-colour art lossless is
-// the smaller file anyway. `bun run start` still converts everything; the extra
-// `bun run mono` narrows a run down to just the two-tone sets (add --force to
+// the smaller file anyway. The `__skin_bw` suffix is detected per file, so a
+// single `bun run start` encodes each png the right way (add --force to
 // re-publish ones whose png was re-rolled or re-thresholded).
-const MONO_SKINS = new Set(["bw"]);
-const isMono = (segments: string[]) =>
-  segments.some(s => s.startsWith("skin_") && MONO_SKINS.has(s.slice(5)));
+// A re-roll of a mono set keeps its name and takes a numeric tail
+// (`skin_bw_2`) — it is just as binarized as `skin_bw`, so match that too;
+// a bare `skin_2` is an ordinary colour variant and stays lossy.
+const MONO_SKINS = ["bw"];
+const MONO_RE = new RegExp(`^skin_(${MONO_SKINS.join("|")})(_\\d+)?$`);
+const isMono = (segments: string[]) => segments.some(s => MONO_RE.test(s));
 
 // Structured naming: `id[__skin_<v>][__form_<v>]`. Segments split on `__`;
 // the first is the card id, the rest form the variant suffix (e.g. `skin_2`,
@@ -53,26 +56,25 @@ const parsed = pngFiles.map(file => {
   return { file, name, id, segments, mono: isMono(segments) };
 });
 
-// images.json is rebuilt from scratch, so it must always see EVERY png —
-// otherwise a filtered run would drop the other half of the catalogue.
+// images.json is rebuilt from scratch, so it must always see EVERY png.
 for (const { id, segments } of parsed) {
   if (segments.length) (cards[id] ??= []).push(segments.join("__"));
   else cards[id] ??= [];
 }
 
-const onlyMono = process.argv.includes("--mono");
-const noMono = process.argv.includes("--no-mono");
 const force = process.argv.includes("--force");
-const queue = parsed.filter(p => (onlyMono ? p.mono : noMono ? !p.mono : true));
 
-const scope = onlyMono ? "mono skins only" : noMono ? "skipping mono skins" : "everything";
-console.log(`Found ${pngFiles.length} PNG file(s), converting ${queue.length} (${scope})...`);
+const monoCount = parsed.filter(p => p.mono).length;
+console.log(
+  `Found ${pngFiles.length} PNG file(s): ` +
+    `${monoCount} mono (lossless), ${parsed.length - monoCount} colour (lossy)...`,
+);
 
 const skipped: string[] = [];
 const generated: string[] = [];
 const failed: string[] = [];
 
-for (const { file, name, mono } of queue) {
+for (const { file, name, mono } of parsed) {
   const inputPath = join(imagesPath, file);
   const outputName = name + ".webp";
   const outputPath = join(outputDir, outputName);
