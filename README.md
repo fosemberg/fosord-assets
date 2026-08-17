@@ -23,6 +23,15 @@ This project was created using `bun init` in bun v1.3.13. [Bun](https://bun.com)
   Files whose webp already exists are skipped; `--force` re-encodes them
   (the regen flow instead deletes the stale webp for exactly the ids it
   re-rolled, so a normal run republishes them).
+- `bun run regen <id|id__skin_x> [...] [--dry-run]` — re-publish named art and
+  bump it in one step: drops the stale webp(s), re-runs the conversion and
+  stamps `docs/versions.json`. Use it when the raw png in `$IMAGES_PATH` is
+  already the new art (hand-edited, re-thresholded, or generated with
+  `regen.ts --skip-publish`) — this repo never draws anything; the paid regen
+  lives in `tools/gen-art/regen.ts` in the game repo and drives this repo
+  itself. A bare id takes the base image and every variant (`__skin_*`,
+  `__form_*`); a name that already carries a `__` segment is matched exactly,
+  so one re-rolled skin doesn't bust the cache of its untouched siblings.
 - `bun run bump <name> [...]` — stamp `docs/versions.json`, the **per-image
   cache-bust ledger**: `name` is a published file's base name (`goblin`,
   `goblin__skin_bw`), the value is a short content hash of its webp. The game
